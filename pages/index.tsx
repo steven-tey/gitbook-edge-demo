@@ -59,11 +59,11 @@ export default function Home() {
       >
         <Card
           title="SSR"
-          description="Method: `getServerSideProps`. This reads from a Firestore NoSQL database in Northern Virginia (`us-east-4`)."
+          description="Method: `getServerSideProps`. This reads from a Firestore NoSQL database in Northern Virginia (`us-east`)."
         />
         <Card
           title="Edge"
-          description="Method: Middleware + `getStaticProps`. This reads from an Upstash Redis database in Northern Virginia (`us-east-1`)."
+          description="Method: Middleware + `getStaticProps`. This reads from an Upstash Redis database in Northern Virginia (`us-east`)."
         />
       </motion.div>
     </Layout>
