@@ -1,26 +1,42 @@
-import { ReactNode } from "react";
 import ReactMarkdown from "react-markdown";
 import Balancer from "react-wrap-balancer";
 
 export default function Card({
   title,
   description,
-  demo,
-  large,
 }: {
   title: string;
   description: string;
-  demo: ReactNode;
-  large?: boolean;
 }) {
   return (
-    <div
-      className={`relative col-span-1 h-96 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md ${
-        large ? "md:col-span-2" : ""
-      }`}
-    >
-      <div className="flex h-60 items-center justify-center">{demo}</div>
-      <div className="mx-auto max-w-md text-center">
+    <div className="relative col-span-1 h-96 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md">
+      <div className="flex h-60 items-center justify-center space-x-2">
+        <a
+          className="rounded-full bg-gray-100 px-5 py-2 font-medium text-gray-800 transition-colors hover:bg-gray-200"
+          href={`/${title.toLowerCase()}/private`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          /{title.toLowerCase()}/private
+        </a>
+        <a
+          className="rounded-full bg-gray-100 px-5 py-2 font-medium text-gray-800 transition-colors hover:bg-gray-200"
+          href={`/${title.toLowerCase()}/va`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          /{title.toLowerCase()}/va
+        </a>
+        <a
+          className="rounded-full bg-gray-100 px-5 py-2 font-medium text-gray-800 transition-colors hover:bg-gray-200"
+          href={`/${title.toLowerCase()}/canonical`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          /{title.toLowerCase()}/canonical
+        </a>
+      </div>
+      <div className="mx-auto max-w-lg text-center">
         <h2 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent md:text-3xl md:font-normal">
           <Balancer>{title}</Balancer>
         </h2>

@@ -14,7 +14,7 @@ export default async function handler(req: NextRequest) {
   const [sfProData] = await Promise.all([sfPro]);
 
   const { searchParams } = req.nextUrl;
-  const title = searchParams.get("title") || "Precedent";
+  const title = searchParams.get("title") || "GitBook Edge Demo";
 
   return new ImageResponse(
     (
@@ -33,8 +33,8 @@ export default async function handler(req: NextRequest) {
       >
         <img
           src={new URL("../../public/logo.png", import.meta.url).toString()}
-          alt="Precedent Logo"
-          tw="w-20 h-20 mb-4 opacity-95"
+          alt="GitBook Logo"
+          tw="w-28 h-20 mb-4 opacity-95"
         />
         <h1
           style={{
@@ -44,7 +44,6 @@ export default async function handler(req: NextRequest) {
               "linear-gradient(to bottom right, #000000 21.66%, #78716c 86.47%)",
             backgroundClip: "text",
             color: "transparent",
-            lineHeight: "5rem",
             letterSpacing: "-0.02em",
           }}
         >
