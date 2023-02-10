@@ -4,7 +4,7 @@ const DOMAIN = "https://gitbook-edge-demo.vercel.app";
 
 export default function Meta({
   title = "GitBook Edge Demo",
-  description = "Demo app that shows the difference between edge middleware + getStaticProps and getServerSideProps",
+  description = "Demo app that shows the difference between edge middleware and getServerSideProps",
   image = `${DOMAIN}/api/og`,
 }: {
   title?: string;

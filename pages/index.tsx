@@ -63,7 +63,7 @@ export default function Home() {
         />
         <Card
           title="Edge"
-          description="Method: Middleware + `getStaticProps`. This reads from an Upstash Redis database in Northern Virginia (`us-east`)."
+          description="Method: Edge Middleware. This reads from an Upstash Redis database in Northern Virginia (`us-east`)."
         />
       </motion.div>
     </Layout>
