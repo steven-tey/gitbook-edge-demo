@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const DOMAIN = "https://precedent.dev";
+const DOMAIN = "https://gitbook-edge-demo.vercel.app";
 
 export default function Meta({
   title = "GitBook Edge Demo",
